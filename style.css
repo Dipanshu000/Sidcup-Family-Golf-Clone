@@ -6,10 +6,26 @@
   color: #fff;
 }
 
+*::selection{
+  background-color: white;
+  color: #ace022;
+}
+
 html,
 body {
   height: 100%;
   width: 100%;
+}
+
+body::-webkit-scrollbar{
+  display: block;
+  width: 5px;
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #95c11e;
+  border-radius: 50px;
 }
 
 #cursor {
@@ -45,6 +61,7 @@ body {
   justify-content: flex-start;
   z-index: 99;
 }
+
 
 #nav img {
   height: 75px;
@@ -410,6 +427,49 @@ video {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 150px;
+  z-index: 99;
+  gap: 6.5vw;
   padding: 0 100px;
+}
+
+#footer>img{
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+#f1 img{
+  height: 100%;
+}
+
+#f1,#f2,#f3,#f4{
+  position: relative;
+  width: fit-content;
+  z-index: 99;
+}
+
+#f2 h3,#f3 h3{
+  font-size: 1.6vw;
+  white-space: nowrap;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+#f4 h4{
+  font-size: 1vw;
+  white-space: nowrap;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+#logo{
+  height: 150px;
+  width: 150px;
+  margin-top: 45px;
 }
